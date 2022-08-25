@@ -103,6 +103,7 @@ main .promociones{
     font-size: 30px;
     color: rgb(170, 170, 170);
     text-decoration: none;
+    
 }
 
 .pie-redes a:link{
@@ -155,6 +156,25 @@ form .enviar{
 .fte-ppal{
     font-family: var(--fuentePpal);
 }
+
+/* ARTICULOS */
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+.seccion{
+    padding-bottom: 60px;
+}
+
+.centrar{
+    margin: auto;
+    
+}
+
+
+
 
 @media screen and (min-width: 768px){
     main .texto-inicio{

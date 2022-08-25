@@ -4,91 +4,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Monona</title>
 </head>
 <body>
     
     <header class="cabecera">
-        <div class="logo">
-            <h1 class="logo-titulo">MONONA</h1>      
-            <img class="logo-icono" src="../IMG/huella-naranja.png" alt="">  
-        </div>
 
-        <div id="menu">
-            <nav>
-                <ul class="menu-lista">
-                    <li class="menu-item"><a href="../index.html">Inicio</a></li>
-                    <li class="menu-item"><a href="articulos.html" class="instancia">Artículos</a></li>
-                    <li class="menu-item"><a href="servicios.html">Servicios</a></li>
-                    <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
-                    <li class="menu-item"><a href="contacto.html">Contacto</a></li>    
-                </ul>
-            </nav>
-
-            <i class="bi bi-list"></i>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+            
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">MONONA <img src="../IMG/huella-naranja.png" alt="" width="40" height="40"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+               
+                  <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Articulos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <section>
-            <h1 class="art-titulo">Nuestros productos</h1>
-           
-            <div class="art-contenedor">
-                <div class="articulo">
-                    <h3 class="nom-articulo">Collar</h3>
-                    <img src="../IMG/collar.png" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Champú</h3>
-                    <img src="../IMG/champu.webp" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Pelota</h3>
-                    <img src="../IMG/pelota.png" alt="" class="img-articulo">
+        <section class="seccion">
+            <h1 class="titulo">Nuestros productos</h1>
+
+            <div class="container-fluid fte-ppal">
+                <div class="row">
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Collar</h3>
+                            </div>
+                            <img src="../IMG/collar.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Champú</h3>
+                            </div>
+                            <img src="../IMG/champu.webp" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Pelota</h3>
+                            </div>
+                            <img src="../IMG/pelota.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="art-contenedor">
-                <div class="articulo">
-                    <h3 class="nom-articulo">Alimento</h3>
-                    <img src="../IMG/alimento.png" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Cama</h3>
-                    <img src="../IMG/cama.png" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Cepillo</h3>
-                    <img src="../IMG/cepillo.png" alt="" class="img-articulo">
+            <div class="container-fluid fte-ppal">
+                <div class="row">
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Alimento</h3>
+                            </div>
+                            <img src="../IMG/alimento.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Cama</h3>
+                            </div>
+                            <img src="../IMG/cama.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Chaleco</h3>
+                            </div>
+                            <img src="../IMG/chaleco.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="art-contenedor">
-                <div class="articulo">
-                    <h3 class="nom-articulo">Chaleco</h3>
-                    <img src="../IMG/chaleco.png" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Cucha</h3>
-                    <img src="../IMG/cucha.png" alt="" class="img-articulo">
-                </div>
-                <div class="articulo">
-                    <h3 class="nom-articulo">Juguete</h3>
-                    <img src="../IMG/juguete.png" alt="" class="img-articulo">
+            <div class="container fte-ppal">
+                <div class="row">
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Cepillo</h3>
+                            </div>
+                            <img src="../IMG/cepillo.PNG" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Cucha</h3>
+                            </div>
+                            <img src="../IMG/cucha.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card centrar" style="width: 13rem;">
+                            <div class="card-body">
+                                <h3 class="card-title text-center">Juguete</h3>
+                            </div>
+                            <img src="../IMG/juguete.png" class="card-img-top zoom" alt="...">
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         </section>
     </main>
     
-    <footer class="pie">
-        <p class="pie-nombre">Monona - Tienda online para caninos</p>
-        <p class="pie-dir">Dir: Rivadavia 123, Santa Rosa, La Pampa / Tel: 1122334455 / E-mail: info@monona.com</p>
-        <section class="pie-redes">
-            <a href="https://facebook.com" target="_blank"> <i class="bi bi-facebook"></i> </a> 
-            <a href="https://twitter.com" target="_blank"> <i class="bi bi-twitter"></i> </a>
-            <a href="https://instagram.com" target="_blank"> <i class="bi bi-instagram"></i> </a>
-        </section>
-    </footer>
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">  
+            <section class="mb-4 pie-redes" >
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i> </a> 
+                <a href="https://twitter.com" target="_blank"> <i class="bi bi-twitter"></i> </a>
+                <a href="https://instagram.com" target="_blank"> <i class="bi bi-instagram"></i></a>
+            </section>   
+        </div>
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="pie-nombre fte-ppal">Monona - Tienda online para caninos</p>
+            <p class="pie-dir fte-ppal">Dir: Rivadavia 123, Santa Rosa, La Pampa / Tel: 1122334455 / E-mail: info@monona.com</p>
+        </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
